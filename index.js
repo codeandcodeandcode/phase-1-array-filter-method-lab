@@ -3,3 +3,7 @@ function findMatching(arr, str) {
     return newArr;
 }
 
+function fuzzyMatch(arr, str) {
+    let newArr = arr.filter(i=>i.toLowerCase().indexOf(str.toLowerCase()) === 0);
+    return newArr;
+}
